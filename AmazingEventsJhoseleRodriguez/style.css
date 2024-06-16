@@ -7,14 +7,19 @@
     height: 20vh;
     
 }
-#poster{
+#poster1, #poster2, #poster3{
     height: auto;
 }
-
-#posters img{
-    height: 35vh;
+#poster4, #poster5, #poster6,  #poster7{
+    min-width: 250px;
 }
-#tarjeta{
+
+
+#posterspast img{
+    height: 35vh;
+    
+}
+#tarjeta1, #tarjeta2, #tarjeta3, #tarjeta4, #tarjeta5, #tarjeta6{
     width: 30%;
     min-width: 300px;
 }
