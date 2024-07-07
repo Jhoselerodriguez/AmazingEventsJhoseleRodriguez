@@ -89,5 +89,98 @@
 
 //7. Realizar un programa que permita el ingreso de los siguientes datos: Nombre, pase (vip o normal), si posee entrada (si o no, s o n, true o false). Las personas que posean tu mismo nombre tienen ingreso libre así como también los que posean un pase vip,mostrar un mensaje de bienvenida. Si posee entrada preguntar si desea utilizarla, en caso afirmativo mostrar mismo mensaje de bienvenida. Y por último de no tener el mismo nombre o poseer un pase vip o entrada, preguntar si desea comprar, caso afirmativo solicitar dinero disponible, si posee $1000 o más, mostrar mensaje de venta de entrada y bienvenida, caso contrario mostrar mensaje de rechazo de venta, y en caso contrario a no querer comprar, mostrar mensaje de despedida.
 
+// let name = prompt("Escribe tu nombre")
+
+// if (name == "Jhosele"){
+//     console.log(name + " Tienes el ingreso libre Bienvenido");
+// }
+// else {
+
+//     let pase = confirm("Si tiene pase VIP presione aceptar")
+
+//     if (pase == true) {
+//         console.log(name + " Bienvenidos!");
+//     }
+//     else{
+//         let entrada = confirm("Posee entradas")  
+    
+//       if (entrada == true){
+//           let entrada1 = confirm("Desea utilizarla");
+//           if (entrada1 == true){
+//               console.log(name + " Bienvenidos!!")
+//           }
+//           else{
+//               console.log(name + " No puede entrar")
+//           }  
+//         }
+//       else{
+//           let comprar = confirm("Desea comprar entradas")
+
+//           if (comprar == true){
+//             let dinero = prompt("Cuanto dinero disponible tiene? debe ser mayor a $1000")
+//             if (dinero > 1000){
+//                 console.log("Venta de entrada y Bienvenidos")
+//             }
+//             else{
+//                 console.log("Rechazo de venta")
+//             }
+            
+//           }
+//           else {
+//             console.log(name + " No puede entrar")
+//           }
+//         }  
+//     }
+// }
+
+
+
+// 8. Realizar un juego de adivinanza estableciendo un valor entre 1 y 10 en una variable llamada numeroIncognita y que permita en 3 intentos adivinar el número. El usuario deberá ingresar un numero del 1 al 10 por pantalla en 3 intentos el cual se deberá guardar en una variable llamada numeroIngresado, y en cada intento deberás mostrarle un mensaje al usuario diciendo: “el numero ingresado es mayor, vuelve a intentarlo” o “el numero ingresado es menor, vuelve a intentarlo” o en caso de adivinar, un mensaje que diga: “Ganaste, haz adivinado el número.” No te preocupes si usas mucho código repetido, mas adelante veraz como realizar este juego de manera más eficiente.
+
+// let numeroIncognita = 5
+
+// let numeroIngresado = prompt("Ingresar un numero del 1 al 10")
+
+// if  (numeroIngresado == numeroIncognita) {
+//        console.log("“Ganaste, haz adivinado el número.”")   
+//     }
+
+// else if (numeroIngresado<numeroIncognita){ 
+//        console.log("el numero ingresado es menor, vuelve a intentarlo")
+//     }
+
+// else {
+//        console.log("el numero ingresado es mayor, vuelve a intentarlo")
+//        }
+
+// numeroIngresado = prompt("Ingresar un numero del 1 al 10")
+
+// if  (numeroIngresado == numeroIncognita) {
+//       console.log("“Ganaste, haz adivinado el número.”")   
+//       }
+       
+// else if (numeroIngresado<numeroIncognita){ 
+//        console.log("el numero ingresado es menor, vuelve a intentarlo")
+//        }
+       
+// else {
+//     console.log("el numero ingresado es mayor, vuelve a intentarlo")
+//      }
+
+//      numeroIngresado = prompt("Ingresar un numero del 1 al 10")
+
+// if  (numeroIngresado == numeroIncognita) {
+//       console.log("“Ganaste, haz adivinado el número.”")   
+//       }
+       
+// else if (numeroIngresado<numeroIncognita){ 
+//        console.log("el numero ingresado es menor, vuelve a intentarlo")
+//        }
+       
+// else {
+//     console.log("el numero ingresado es mayor, vuelve a intentarlo")
+//      }
+
+// 9. Crear un programa que permita ingresar tu edad y decir si eres un infante (0 a 12 años), adolescente (13 a 18 años), un mayor joven (19 a 45 años) o un anciano (mas de 45 años), y en caso de ingresar una edad mayor a 100 mostrar un mensaje preguntando si en realidad tiene esa edad.     
 
 
