@@ -22,10 +22,8 @@
     width:400px;
     
 }
-/* #tarjeta1, #tarjeta2, #tarjeta3, #tarjeta4, #tarjeta5, #tarjeta6, #tarjeta7{
-    width: 30%;
-    min-width: 300px;
-} */
+
+
 
 #imagen1, #imagen2, #imagen3{
     width: 100%;
@@ -60,6 +58,9 @@ footer img{
 }
 #divdetails, #divdetails1, #divdetails2, #divdetails3, #divdetails4, #divdetails5, #divdetails6{
    height: 100%;
+   width:95vw;
+   min-width: 200px;
+   margin: 10px;
    
 }
 #footerdetails{
