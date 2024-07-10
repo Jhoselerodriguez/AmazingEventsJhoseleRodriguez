@@ -1,0 +1,83 @@
+
+#logo{
+    width: 32%;
+    height: 32%;
+}
+#carrusel1, #carrusel2, #carrusel3, #carrusel4, #carrusel5{
+    height: 20vh;
+    
+}
+#poster1, #poster2, #poster3{
+    height: auto;
+}
+#poster4, #poster5, #poster6,  #poster7{
+    min-width: 250px;
+}
+
+#posterspast{
+    width: 100%;
+
+}
+.card{
+    width:400px;
+    
+}
+
+
+
+#imagen1, #imagen2, #imagen3{
+    width: 100%;
+    height: 80%;
+}
+
+footer img{
+    height: 5vh;
+}
+
+#formulario{
+    height: 60vh;
+}
+#contactus{
+    width: 70%;
+}
+
+#imagedetails, #imagedetails1, #imagedetails2, #imagedetails3,  #imagedetails4, #imagedetails5, #imagedetails6{
+   height: 100%;
+   width: 60vw;
+}
+
+#cardetails, #cardetails1, #cardetails2, #cardetails3, #cardetails4, #cardetails5, #cardetails6{
+    width: 80%;
+   
+    
+}
+.p-5{
+    height: 80%;
+    width: 100px;
+    
+}
+#divdetails, #divdetails1, #divdetails2, #divdetails3, #divdetails4, #divdetails5, #divdetails6{
+   height: 100%;
+   width:95vw;
+   min-width: 200px;
+   margin: 10px;
+   
+}
+#footerdetails{
+    width: 100%;
+    height:8vh;
+}
+
+th, td{
+    font-size: 20px;
+    height: 30px;    
+}
+td{
+    font-size: 15px;
+    width: 80vw;
+}
+th{
+    margin-left: 2px;
+}
+
+
