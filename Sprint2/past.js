@@ -1,3 +1,4 @@
+
 const data = {
     currentDate: "2023-01-01",
     events: [

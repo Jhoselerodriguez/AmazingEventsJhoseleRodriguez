@@ -121,7 +121,7 @@ let soyMayorDeEdad = miEdad>18
 console.log("soy mayor de edad "+soyMayorDeEdad)
 
 
-let edadPersona = prompt("Ingresa tu edad")
+let edadPersona = prompt("Ingresa tu edad.")
 let alturaPersona = prompt("Ingresa tu altura")
 
 let puedeSubir= (edadPersona>6) && (alturaPersona>120)

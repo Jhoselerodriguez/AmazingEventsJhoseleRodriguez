@@ -1,4 +1,4 @@
-//1. Realizar un programa que dado 2 números imprima por consola si el primer numero es mayor que el segundo.
+//1.. Realizar un programa que dado 2 números imprima por consola si el primer numero es mayor que el segundo.
 
 //let primero = 20;
 //let segundo = 25;
