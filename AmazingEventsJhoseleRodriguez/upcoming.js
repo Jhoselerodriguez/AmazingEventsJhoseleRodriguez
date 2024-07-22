@@ -223,3 +223,216 @@ for(let i = 0; i < data.events.length; i++){
             postersUp.appendChild(postersUpcoming)       
 
   }
+
+  crearCheckList()
+
+  function crearCheckList(){
+   let categorias = document.getElementById("Category")
+   CheckList = []
+   for(let i = 0; i < myArray.length; i++){
+ 
+    CheckList.push(myArray[i].category) 
+
+   }
+
+
+   for(let i = 0; i< CheckList.length;i++){
+     let check = document.createElement("div")
+     check.innerHTML = `<input class="form-check-input" type="checkbox" value="" id="inlineCheckbox${i}" onclick="filtrarChecks(${i})">
+             <label class="form-check-label" for="inlineCheckbox${i}">
+               ${CheckList[i]}
+             </label>`
+       categorias.appendChild(check)
+   }
+ 
+  }
+
+
+  let arrFilt = []
+  let arrObjetos = []
+  function filtrarChecks(num){
+    let caja = document.getElementById("tarjeta2")
+    caja.innerHTML = ""
+  
+     let check = document.getElementById(`inlineCheckbox${num}`)
+  
+     if(check.checked){
+  
+  
+      for(let i = 0; i <  myArray.length; i++){
+  
+        if(CheckList[num] ==  myArray[i].category){
+          arrObjetos.push( myArray[i])
+  
+          console.log(arrObjetos)
+  
+        }
+       }
+  
+    }else{
+      for(let i = 0;i<arrObjetos.length;i++){
+        if(arrObjetos[i].category.includes(CheckList[num])){
+          arrObjetos.splice(i,2)
+          
+        }
+      }
+      console.log(arrObjetos)
+    }
+  
+  
+    if(check.checked){
+  
+  
+      for(let i = 0; i < myArray.length; i++){
+  
+        if(CheckList[num] == myArray[i].category){
+          arrFilt.push(CheckList[num])
+  
+          console.log(arrFilt)
+  
+          
+          for(let j = 0; j < arrFilt.length;j++){
+            for(let i = 0; i < myArray.length;i++){
+              if(myArray[i].category == arrFilt[j]){
+                
+                let carta = document.createElement("div")
+                carta.setAttribute("class", "card anim")
+            
+                carta.innerHTML = `<img src=${myArray[i].image} class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">${myArray[i].name}</h5>
+                            <p class="card-text">${myArray[i].description}</p>
+                            <div class="precio d-flex justify-content-around flex-wrap">
+                              <h4 class="valor">${myArray[i].price + "$"}</h4>
+                           <a href="./Details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">Details</a>
+                            </div>
+                          </div>`
+            
+                caja.appendChild(carta)
+  
+              }
+            }
+          }
+          
+  
+          break
+        }
+       }
+  
+    }else{
+      
+      let numero = arrFilt.indexOf(CheckList[num])
+      arrFilt.splice(numero,1)
+      console.log(arrFilt)
+      for(let j = 0; j < arrFilt.length;j++){
+        for(let i = 0; i < myArray.length;i++){
+          if(myArray[i].category == arrFilt[j]){
+            
+            let carta = document.createElement("div")
+            carta.setAttribute("class", "card anim")
+        
+            carta.innerHTML = `<img src=${myArray[i].image} class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">${myArray[i].name}</h5>
+                        <p class="card-text">${myArray[i].description}</p>
+                        <div class="precio d-flex justify-content-around flex-wrap">
+                          <h4 class="valor">${myArray[i].price + "$"}</h4>
+                        <a href="./Details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">Details</a>
+                        </div>
+                      </div>`
+        
+            caja.appendChild(carta)
+  
+          }
+        }
+      }
+      if(arrFilt.length == 0){
+        
+   for(let i = 0; i < myArray.length; i++){
+    let caja = document.getElementById("tarjeta2")
+  
+    let carta = document.createElement("div")
+    carta.setAttribute("class", "card anim")
+  
+    carta.innerHTML = `<img src=${myArray[i].image} class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title titulos">${myArray[i].name}</h5>
+                <p class="card-text descripciones">${myArray[i].description}</p>
+                <div class="precio d-flex justify-content-around flex-wrap">
+                  <h4 class="valor">${myArray[i].price + "$"}</h4>
+                <a href="./Details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">Details</a>
+                </div>
+              </div>`
+  
+    caja.appendChild(carta)
+  
+  
+  }
+      }
+    }
+     
+   }
+  
+
+   let buscar = document.querySelector(".search")
+
+   function filtrarTexto(){
+     let caja = document.getElementById("tarjeta2")
+     caja.innerHTML = ""
+   if(arrFilt.length == 0){
+       for(let i = 0; i < myArray.length;i++){
+         if(myArray[i].name.toLowerCase().includes(buscar.value.toLowerCase()) || myArray[i].description.toLowerCase().includes(buscar.value.toLowerCase())){
+         
+           let carta = document.createElement("div")
+           carta.setAttribute("class", "card anim")
+         
+           carta.innerHTML = `<img src=${myArray[i].image} class="card-img-top" alt="...">
+                     <div class="card-body">
+                       <h5 class="card-title titulos">${myArray[i].name}</h5>
+                       <p class="card-text descripciones">${myArray[i].description}</p>
+                       <div class="precio d-flex justify-content-around flex-wrap">
+                         <h4 class="valor">${myArray[i].price + "$"}</h4>
+                       <a href="./Details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">Details</a>
+                       </div>
+                     </div>`
+         
+           caja.appendChild(carta)
+         }
+         }
+         if(caja.innerHTML == ""){
+          let nada = document.createElement("h4")
+          nada.textContent = "Lo sentimos, no hay cartas para mostrar :["
+          caja.appendChild(nada)
+        }
+   }else{
+     for(let i = 0; i < arrObjetos.length;i++){
+       if(arrObjetos[i].name.toLowerCase().includes(buscar.value.toLowerCase()) || arrObjetos[i].description.toLowerCase().includes(buscar.value.toLowerCase())){
+       
+         let carta = document.createElement("div")
+         carta.setAttribute("class", "card anim")
+       
+         carta.innerHTML = `<img src=${arrObjetos[i].image} class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title titulos">${arrObjetos[i].name}</h5>
+                     <p class="card-text descripciones">${arrObjetos[i].description}</p>
+                     <div class="precio d-flex justify-content-around flex-wrap">
+                       <h4 class="valor">${arrObjetos[i].price + "$"}</h4>
+                     <a href="./Details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">Details</a>
+                     </div>
+                   </div>`
+       
+         caja.appendChild(carta)
+       }
+       }
+       if(caja.innerHTML == ""){
+        let nada = document.createElement("h4")
+        nada.textContent = "Lo sentimos, no hay cartas para mostrar :["
+        caja.appendChild(nada)
+      }
+   
+   }
+   
+   
+   }
+   
+   buscar.addEventListener("keyup", filtrarTexto)
