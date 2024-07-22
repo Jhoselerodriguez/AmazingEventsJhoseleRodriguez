@@ -2,10 +2,11 @@ let url = new URLSearchParams(window.location.search)
 
 
 let detalles = document.getElementById("cardetails")
-let imagenes = document.getElementByIdlector("imagendetails")
+let imagenes = document.getElementById("imagedetails")
 
 if(url.get("date")>url.get("currentDate")){
     imagenes.setAttribute("src", url.get("image"))
+    console.log("imagenes")
     detalles.innerHTML = `
                 <p><strong>Name:</strong> ${url.get("name")}</p>
                 <p><strong>Date:</strong> ${url.get("date")}</p>

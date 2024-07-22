@@ -46,17 +46,17 @@ footer img{
    width: 60vw;
 }
 
-#cardetails, #cardetails1, #cardetails2, #cardetails3, #cardetails4, #cardetails5, #cardetails6{
+/*#cardetails{
     width: 80%;
    
     
-}
+}*/
 .p-5{
     height: 80%;
     width: 100px;
     
 }
-#divdetails, #divdetails1, #divdetails2, #divdetails3, #divdetails4, #divdetails5, #divdetails6{
+#divdetails{
    height: 100%;
    width:95vw;
    min-width: 200px;
