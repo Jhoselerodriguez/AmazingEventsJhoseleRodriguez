@@ -216,7 +216,7 @@ for(let i = 0; i < data.events.length; i++){
               <p class="card-text">${myArray[i].description}</p>
                <div class="mt-auto d-flex justify-content-between">
                  <p class="card-text"> Price: ${myArray[i].price} $ </p>
-                 <a href="./details.html" class="btn btn-primary">Details</a>
+                 <a href="./details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">details</a>
                </div>
             </div>`
  
@@ -304,7 +304,7 @@ for(let i = 0; i < data.events.length; i++){
                             <p class="card-text">${myArray[i].description}</p>
                             <div class="precio d-flex justify-content-around flex-wrap">
                               <h4 class="valor">${myArray[i].price + "$"}</h4>
-                           <a href="./Details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">Details</a>
+                           <a href="./details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">details</a>
                             </div>
                           </div>`
             
@@ -337,7 +337,7 @@ for(let i = 0; i < data.events.length; i++){
                         <p class="card-text">${myArray[i].description}</p>
                         <div class="precio d-flex justify-content-around flex-wrap">
                           <h4 class="valor">${myArray[i].price + "$"}</h4>
-                        <a href="./Details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">Details</a>
+                        <a href="./details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">details</a>
                         </div>
                       </div>`
         
@@ -360,7 +360,7 @@ for(let i = 0; i < data.events.length; i++){
                 <p class="card-text descripciones">${myArray[i].description}</p>
                 <div class="precio d-flex justify-content-around flex-wrap">
                   <h4 class="valor">${myArray[i].price + "$"}</h4>
-                <a href="./Details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">Details</a>
+                <a href="./details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">details</a>
                 </div>
               </div>`
   
@@ -392,7 +392,7 @@ for(let i = 0; i < data.events.length; i++){
                        <p class="card-text descripciones">${myArray[i].description}</p>
                        <div class="precio d-flex justify-content-around flex-wrap">
                          <h4 class="valor">${myArray[i].price + "$"}</h4>
-                       <a href="./Details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">Details</a>
+                       <a href="./details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">details</a>
                        </div>
                      </div>`
          
@@ -417,7 +417,7 @@ for(let i = 0; i < data.events.length; i++){
                      <p class="card-text descripciones">${arrObjetos[i].description}</p>
                      <div class="precio d-flex justify-content-around flex-wrap">
                        <h4 class="valor">${arrObjetos[i].price + "$"}</h4>
-                     <a href="./Details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">Details</a>
+                     <a href="./details.html?name=${myArray[i].name}&description=${myArray[i].description}&date=${myArray[i].date}&category=${myArray[i].category}&place=${myArray[i].place}&capacity=${myArray[i].capacity}&assistance=${myArray[i].assistance}&price=${myArray[i].price}&image=${myArray[i].image}&currentDate=${data.currentDate}&estimate=${myArray[i].estimate}" class="btn btn-primary">details</a>
                      </div>
                    </div>`
        
