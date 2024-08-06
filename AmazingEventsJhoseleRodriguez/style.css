@@ -7,11 +7,8 @@
     height: 20vh;
     
 }
-#poster1, #poster2, #poster3{
-    height: auto;
-}
-#poster4, #poster5, #poster6,  #poster7{
-    min-width: 250px;
+#postershome img, #postersupcoming img, #posterspast img{
+height: 250px;
 }
 
 #posterspast{
@@ -22,8 +19,6 @@
     width:400px;
     
 }
-
-
 
 #imagen1, #imagen2, #imagen3{
     width: 100%;
@@ -46,11 +41,6 @@ footer img{
    width: 60vw;
 }
 
-/*#cardetails{
-    width: 80%;
-   
-    
-}*/
 .p-5{
     height: 80%;
     width: 100px;
